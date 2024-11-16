@@ -22,11 +22,13 @@ GridSearchCV:
 Definition: GridSearchCV is a technique used to tune hyperparameters by exhaustively searching through a manually specified subset of the hyperparameter space.
 Methodology: It works by defining a grid of hyperparameter values, then evaluating the model performance using cross-validation for each combination of hyperparameters. Finally, it selects the combination that yields the best performance.
 Usage: GridSearchCV is widely used in machine learning for finding the best hyperparameters for models like support vector machines (SVMs), decision trees, random forests, etc.
+
 RandomizedSearchCV:
 
 Definition: RandomizedSearchCV is similar to GridSearchCV but instead of exhaustively searching through all possible combinations of hyperparameters, it randomly samples a fixed number of hyperparameter settings from specified probability distributions.
 Methodology: RandomizedSearchCV can be more efficient than GridSearchCV for hyperparameter optimization, especially when the hyperparameter space is large, as it doesn't require evaluating all possible combinations.
 Usage: It's particularly useful when computational resources are limited or when the search space is high-dimensional.
+
 Pipeline:
 
 Definition: A pipeline is a series of data processing steps chained together in a sequence. In machine learning, pipelines are used to automate workflows, combining multiple preprocessing steps (such as scaling, encoding, feature selection) with a final estimator (model) into a single object.
